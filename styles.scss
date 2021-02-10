@@ -1,0 +1,121 @@
+$game-width: 800px;
+$card-width: 69px;
+$hover-shadow: 10px;
+$result-shadow: 18px;
+
+* {
+    box-sizing: border-box;
+    font-family: "Source Code Pro";
+}
+
+body {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1350px) {
+        flex-direction: column;
+    }
+}
+
+header {
+    margin-right: 30px;
+    margin-bottom: 40px;
+    h1 {
+        white-space: nowrap;
+        font-size: 58pt;
+    }
+    p {
+        margin-left: 20px;
+    }
+}
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: $game-width;
+    height: $game-width;
+
+    &.running {
+        > .amib:hover:not(.wrong), > .mutation:hover:not(.wrong) {
+            box-shadow: 0 0 $hover-shadow black;
+        }
+    }
+
+    > .card {
+        position: absolute;
+    }
+}
+
+.card {
+    width: $card-width;
+    height: $card-width;
+    border: 1px solid black;
+    border-radius: 15px;
+
+    &.wrong {
+        box-shadow: 0 0 $result-shadow 5px red;
+    }
+
+    &.right {
+        box-shadow: 0 0 $result-shadow 5px green;
+    }
+}
+
+#status {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-left: 5px;
+    }
+
+    #direction {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 24pt;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+/* Images */
+
+.vent {
+    background: center url("assets/vent.jpg");
+    background-size: cover;
+}
+
+@for $i from 0 through 2 {
+    .lab[data-index="#{$i}"] {
+        background: center url("assets/lab#{$i}.jpg");
+        background-size: cover;
+    }
+}
+
+@each $i in (1, 2, 4) {
+    .mutation[data-index="#{$i}"] {
+        background: center url("assets/mutation#{$i}.jpg");
+        background-size: cover;
+    }
+}
+
+@for $i from 0 through 7 {
+    .amib[data-index="#{$i}"] {
+        background: center url("assets/amib#{$i}.jpg");
+        background-size: cover;
+    }
+}

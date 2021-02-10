@@ -18,7 +18,7 @@ function shuffleCards() {
     cards = document.querySelectorAll("#main > .card");
 }
 
-function positionInCircle(r = 350) {
+function positionInCircle(r = 360) {
     for (var i = 0; i < cards.length; i++) {
         var ang = 2 * Math.PI * i / cards.length;
         cards[i].style.left = main.clientWidth / 2 + r * Math.cos(ang) - cards[i].clientWidth / 2 + 'px';
