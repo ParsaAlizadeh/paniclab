@@ -3,13 +3,6 @@
 }
 
 #main {
-    /*
-    display: grid;
-    grid-template-rows: repeat(5, max-content);
-    grid-template-columns: repeat(5, max-content);
-    gap: 30px;
-    width: auto;
-    */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -24,6 +17,50 @@
     height: 65px;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+#main.running > .amib:hover:not(.wrong), #main.running > .mutation:hover:not(.wrong) {
+    box-shadow: 0 0 10px black;
+}
+
+.card.wrong {
+    box-shadow: 0 0 30px red;
+}
+
+.card.right {
+    box-shadow: 0 0 30px green;
+}
+
+#status {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+#status .card {
+    position: static;
+}
+
+#status .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#status button {
+    margin-left: 5px;
+}
+
+#direction {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24pt;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 7px;
 }
 
 /* Images */
