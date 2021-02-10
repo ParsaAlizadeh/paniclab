@@ -3,68 +3,76 @@
 }
 
 #main {
+    /*
     display: grid;
     grid-template-rows: repeat(5, max-content);
     grid-template-columns: repeat(5, max-content);
     gap: 30px;
     width: auto;
-    margin: 20px;
+    */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 800px;
+    height: 800px;
 }
 
 .card {
-    position: relative;
-    width: 100px;
-    height: 107px;
+    position: absolute;
+    width: 65px;
+    height: 65px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
+/* Images */
+
 .vent {
-    background: url("assets/vent.jpg");
-    background-size: cover;
-}
+    background: center url("assets/vent.jpg");
+    background-size: cover; }
 
 .lab[data-index="0"] {
-    background: url("assets/lab0.jpg");
+    background: center url("assets/lab0.jpg");
     background-size: cover; }
 .lab[data-index="1"] {
-    background: url("assets/lab1.jpg");
+    background: center url("assets/lab1.jpg");
     background-size: cover; }
 .lab[data-index="2"] {
-    background: url("assets/lab2.jpg");
+    background: center url("assets/lab2.jpg");
     background-size: cover; }
 
 .mutation[data-index="1"] {
-    background: url("assets/mutation1.jpg");
+    background: center url("assets/mutation1.jpg");
     background-size: cover; }
 .mutation[data-index="2"] {
-    background: url("assets/mutation2.jpg");
+    background: center url("assets/mutation2.jpg");
     background-size: cover; }
 .mutation[data-index="4"] {
-    background: url("assets/mutation4.jpg");
+    background: center url("assets/mutation4.jpg");
     background-size: cover; }
 
 .amib[data-index="0"] {
-    background: url("assets/amib0.jpg");
+    background: center url("assets/amib0.jpg");
     background-size: cover; }
 .amib[data-index="1"] {
-    background: url("assets/amib1.jpg");
+    background: center url("assets/amib1.jpg");
     background-size: cover; }
 .amib[data-index="2"] {
-    background: url("assets/amib2.jpg");
+    background: center url("assets/amib2.jpg");
     background-size: cover; }
 .amib[data-index="3"] {
-    background: url("assets/amib3.jpg");
+    background: center url("assets/amib3.jpg");
     background-size: cover; }
 .amib[data-index="4"] {
-    background: url("assets/amib4.jpg");
+    background: center url("assets/amib4.jpg");
     background-size: cover; }
 .amib[data-index="5"] {
-    background: url("assets/amib5.jpg");
+    background: center url("assets/amib5.jpg");
     background-size: cover; }
 .amib[data-index="6"] {
-    background: url("assets/amib6.jpg");
+    background: center url("assets/amib6.jpg");
     background-size: cover; }
 .amib[data-index="7"] {
-    background: url("assets/amib7.jpg");
+    background: center url("assets/amib7.jpg");
     background-size: cover; }
