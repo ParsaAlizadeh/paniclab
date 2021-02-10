@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 110px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.vent {
+    background: url("assets/vent.jpg");
+    background-size: cover;
+}
+
+.lab[data-index="0"] {
+    background: url("assets/lab0.jpg");
+    background-size: cover; }
+.lab[data-index="1"] {
+    background: url("assets/lab1.jpg");
+    background-size: cover; }
+.lab[data-index="2"] {
+    background: url("assets/lab2.jpg");
+    background-size: cover; }
+
+.mutation[data-index="1"] {
+    background: url("assets/mutation1.jpg");
+    background-size: cover; }
+.mutation[data-index="2"] {
+    background: url("assets/mutation2.jpg");
+    background-size: cover; }
+.mutation[data-index="4"] {
+    background: url("assets/mutation4.jpg");
+    background-size: cover; }
+
+.amib[data-index="0"] {
+    background: url("assets/amib0.jpg");
+    background-size: cover; }
+.amib[data-index="1"] {
+    background: url("assets/amib1.jpg");
+    background-size: cover; }
+.amib[data-index="2"] {
+    background: url("assets/amib2.jpg");
+    background-size: cover; }
+.amib[data-index="3"] {
+    background: url("assets/amib3.jpg");
+    background-size: cover; }
+.amib[data-index="4"] {
+    background: url("assets/amib4.jpg");
+    background-size: cover; }
+.amib[data-index="5"] {
+    background: url("assets/amib5.jpg");
+    background-size: cover; }
+.amib[data-index="6"] {
+    background: url("assets/amib6.jpg");
+    background-size: cover; }
+.amib[data-index="7"] {
+    background: url("assets/amib7.jpg");
+    background-size: cover; }
+
+.amib:hover, .mutation:hover {
+    box-shadow: 0 0 30px;
+}
