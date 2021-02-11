@@ -60,6 +60,7 @@ header {
     &.running {
         > .amib:hover:not(.wrong), > .mutation:hover:not(.wrong) {
             box-shadow: 0 0 $hover-shadow black;
+            cursor: pointer;
         }
     }
 
@@ -97,6 +98,7 @@ header {
     button {
         font-size: 13pt;
         margin-left: 5px;
+        cursor: pointer;
     }
 
     #direction {

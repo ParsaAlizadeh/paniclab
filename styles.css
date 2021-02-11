@@ -35,7 +35,8 @@ header {
   width: 800px;
   height: 800px; }
   #main.running > .amib:hover:not(.wrong), #main.running > .mutation:hover:not(.wrong) {
-    box-shadow: 0 0 10px black; }
+    box-shadow: 0 0 10px black;
+    cursor: pointer; }
   #main > .card {
     position: absolute; }
 
@@ -59,7 +60,8 @@ header {
     margin-bottom: 20px; }
   #status button {
     font-size: 13pt;
-    margin-left: 5px; }
+    margin-left: 5px;
+    cursor: pointer; }
   #status #direction {
     width: 50px;
     height: 50px;
