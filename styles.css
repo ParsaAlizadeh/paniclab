@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Source Code Pro"; }
+  font-family: monospace; }
 
 body {
   margin: 0 20px;
@@ -10,7 +10,7 @@ body {
   @media (max-width: 1350px) {
     body {
       flex-direction: column; } }
-  @media (max-width: 800px) {
+  @media (max-width: 840px) {
     body {
       align-items: flex-start; } }
 header {
@@ -69,7 +69,7 @@ header {
     font-size: 24pt;
     font-weight: bold;
     text-align: center;
-    padding-top: 5px; }
+    padding-top: 7px; }
 
 /* Images */
 .card.vent {

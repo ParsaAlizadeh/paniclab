@@ -10,7 +10,7 @@ $wrong-color: red;
 
 * {
     box-sizing: border-box;
-    font-family: "Source Code Pro";
+    font-family: monospace;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
         flex-direction: column;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 840px) {
         align-items: flex-start;
     }
 }
@@ -108,7 +108,7 @@ header {
         font-size: 24pt;
         font-weight: bold;
         text-align: center;
-        padding-top: 5px;
+        padding-top: 7px;
     }
 }
 
