@@ -15,6 +15,7 @@ function shuffleCards() {
         var ind = Math.random() * i | 0;
         main.appendChild(cards[ind]);
     }
+    main.appendChild(logbox);
     cards = document.querySelectorAll("#main > .card");
 }
 
