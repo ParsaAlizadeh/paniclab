@@ -10,6 +10,9 @@ body {
   @media (max-width: 1350px) {
     body {
       flex-direction: column; } }
+  @media (max-width: 800px) {
+    body {
+      align-items: flex-start; } }
 header {
   margin-right: 30px;
   margin-bottom: 40px; }
