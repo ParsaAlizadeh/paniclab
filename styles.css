@@ -17,7 +17,12 @@ header {
     white-space: nowrap;
     font-size: 58pt; }
   header p {
-    margin-left: 20px; }
+    margin-left: 20px;
+    font-size: 13pt; }
+  header span.right {
+    text-shadow: 0 0 5px cyan; }
+  header span.wrong {
+    text-shadow: 0 0 5px red; }
 
 #main {
   display: flex;
@@ -34,12 +39,11 @@ header {
 .card {
   width: 69px;
   height: 69px;
-  border: 1px solid black;
   border-radius: 15px; }
   .card.wrong {
-    box-shadow: 0 0 18px 5px red; }
+    box-shadow: 0 0 8px 10px red; }
   .card.right {
-    box-shadow: 0 0 18px 5px green; }
+    box-shadow: 0 0 8px 10px cyan; }
 
 #status {
   display: flex;
@@ -51,6 +55,7 @@ header {
     justify-content: space-around;
     margin-bottom: 20px; }
   #status button {
+    font-size: 13pt;
     margin-left: 5px; }
   #status #direction {
     width: 50px;
@@ -62,62 +67,62 @@ header {
     padding-top: 5px; }
 
 /* Images */
-.vent {
+.card.vent {
   background: center url("assets/vent.jpg");
   background-size: cover; }
 
-.lab[data-index="0"] {
+.card.lab[data-index="0"] {
   background: center url("assets/lab0.jpg");
   background-size: cover; }
 
-.lab[data-index="1"] {
+.card.lab[data-index="1"] {
   background: center url("assets/lab1.jpg");
   background-size: cover; }
 
-.lab[data-index="2"] {
+.card.lab[data-index="2"] {
   background: center url("assets/lab2.jpg");
   background-size: cover; }
 
-.mutation[data-index="1"] {
+.card.mutation[data-index="1"] {
   background: center url("assets/mutation1.jpg");
   background-size: cover; }
 
-.mutation[data-index="2"] {
+.card.mutation[data-index="2"] {
   background: center url("assets/mutation2.jpg");
   background-size: cover; }
 
-.mutation[data-index="4"] {
+.card.mutation[data-index="4"] {
   background: center url("assets/mutation4.jpg");
   background-size: cover; }
 
-.amib[data-index="0"] {
+.card.amib[data-index="0"] {
   background: center url("assets/amib0.jpg");
   background-size: cover; }
 
-.amib[data-index="1"] {
+.card.amib[data-index="1"] {
   background: center url("assets/amib1.jpg");
   background-size: cover; }
 
-.amib[data-index="2"] {
+.card.amib[data-index="2"] {
   background: center url("assets/amib2.jpg");
   background-size: cover; }
 
-.amib[data-index="3"] {
+.card.amib[data-index="3"] {
   background: center url("assets/amib3.jpg");
   background-size: cover; }
 
-.amib[data-index="4"] {
+.card.amib[data-index="4"] {
   background: center url("assets/amib4.jpg");
   background-size: cover; }
 
-.amib[data-index="5"] {
+.card.amib[data-index="5"] {
   background: center url("assets/amib5.jpg");
   background-size: cover; }
 
-.amib[data-index="6"] {
+.card.amib[data-index="6"] {
   background: center url("assets/amib6.jpg");
   background-size: cover; }
 
-.amib[data-index="7"] {
+.card.amib[data-index="7"] {
   background: center url("assets/amib7.jpg");
   background-size: cover; }

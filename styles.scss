@@ -1,7 +1,12 @@
 $game-width: 800px;
 $card-width: 69px;
+
 $hover-shadow: 10px;
-$result-shadow: 18px;
+$result-shadow: 8px;
+$result-spread: 10px;
+
+$right-color: cyan;
+$wrong-color: red;
 
 * {
     box-sizing: border-box;
@@ -28,6 +33,15 @@ header {
     }
     p {
         margin-left: 20px;
+        font-size: 13pt;
+    }
+    span {
+        &.right {
+            text-shadow: 0 0 5px $right-color;
+        }
+        &.wrong {
+            text-shadow: 0 0 5px $wrong-color;
+        }
     }
 }
 
@@ -53,15 +67,15 @@ header {
 .card {
     width: $card-width;
     height: $card-width;
-    border: 1px solid black;
+    // border: 1px solid black;
     border-radius: 15px;
 
     &.wrong {
-        box-shadow: 0 0 $result-shadow 5px red;
+        box-shadow: 0 0 $result-shadow $result-spread $wrong-color;
     }
 
     &.right {
-        box-shadow: 0 0 $result-shadow 5px green;
+        box-shadow: 0 0 $result-shadow $result-spread $right-color;
     }
 }
 
@@ -78,6 +92,7 @@ header {
     }
 
     button {
+        font-size: 13pt;
         margin-left: 5px;
     }
 
@@ -94,27 +109,27 @@ header {
 
 /* Images */
 
-.vent {
+.card.vent {
     background: center url("assets/vent.jpg");
     background-size: cover;
 }
 
 @for $i from 0 through 2 {
-    .lab[data-index="#{$i}"] {
+    .card.lab[data-index="#{$i}"] {
         background: center url("assets/lab#{$i}.jpg");
         background-size: cover;
     }
 }
 
 @each $i in (1, 2, 4) {
-    .mutation[data-index="#{$i}"] {
+    .card.mutation[data-index="#{$i}"] {
         background: center url("assets/mutation#{$i}.jpg");
         background-size: cover;
     }
 }
 
 @for $i from 0 through 7 {
-    .amib[data-index="#{$i}"] {
+    .card.amib[data-index="#{$i}"] {
         background: center url("assets/amib#{$i}.jpg");
         background-size: cover;
     }

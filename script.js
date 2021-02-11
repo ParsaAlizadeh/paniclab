@@ -63,7 +63,7 @@ function resetGame() {
     document.querySelector("#status .card").dataset.index = answer.amib;
 
     var dirElem = document.querySelector("#direction");
-    dirElem.style.backgroundColor = ["#3b6059", "#b13d36", "#af922e"][color];
+    dirElem.style.backgroundColor = ["#276f71", "#d62b3b", "#e4e700"][color];
     dirElem.style.color = ["black", "white"][(answer.dir + 1) / 2]
     dirElem.innerHTML = ["⭯", "⭮"][(answer.dir + 1) / 2];
 
