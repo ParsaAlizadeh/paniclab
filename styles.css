@@ -44,9 +44,9 @@ header {
   height: 69px;
   border-radius: 15px; }
   .card.wrong {
-    box-shadow: 0 0 8px 10px red; }
+    box-shadow: 0 0 8px 8px red; }
   .card.right {
-    box-shadow: 0 0 8px 10px cyan; }
+    box-shadow: 0 0 8px 8px cyan; }
 
 #status {
   display: flex;

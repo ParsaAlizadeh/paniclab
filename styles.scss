@@ -3,7 +3,7 @@ $card-width: 69px;
 
 $hover-shadow: 10px;
 $result-shadow: 8px;
-$result-spread: 10px;
+$result-spread: 8px;
 
 $right-color: cyan;
 $wrong-color: red;
@@ -71,7 +71,6 @@ header {
 .card {
     width: $card-width;
     height: $card-width;
-    // border: 1px solid black;
     border-radius: 15px;
 
     &.wrong {
