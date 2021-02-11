@@ -10,7 +10,7 @@ $wrong-color: red;
 
 * {
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: 'Source Code Pro';
 }
 
 body {
@@ -108,7 +108,7 @@ header {
         font-size: 24pt;
         font-weight: bold;
         text-align: center;
-        padding-top: 7px;
+        line-height: 50px;
     }
 }
 
