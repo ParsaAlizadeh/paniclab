@@ -11,6 +11,7 @@ var answer = {
 };
 
 function shuffleCards() {
+    /* shuffle cards and append them into main */
     for (var i = cards.length; i >= 1; i--) {
         var ind = Math.random() * i | 0;
         main.appendChild(cards[ind]);
@@ -20,6 +21,7 @@ function shuffleCards() {
 }
 
 function positionInCircle(r = 360) {
+    /* position cards around center of main and radius of r */
     for (var i = 0; i < cards.length; i++) {
         var ang = 2 * Math.PI * i / cards.length;
         cards[i].style.left = main.clientWidth / 2 + r * Math.cos(ang) - cards[i].clientWidth / 2 + 'px';
@@ -32,6 +34,7 @@ function hasclass(elem, cls) {
 }
 
 function findAmib(start, amib, dir) {
+    /* Return index of final card for the given state */
     dir = (dir + cards.length) % cards.length;
     var ignore = 0, upgrades = 0;
     for (var now = start; ; now = (now + dir) % cards.length) {
@@ -54,6 +57,8 @@ function indexOf(seq, elem) {
 }
 
 function resetGame() {
+    /* Reset game elements and choose next state randomly */
+
     answer.amib = Math.random() * 8 | 0;
     answer.dir = (Math.random() > 0.5 ? +1 : -1);
     var color = Math.random() * 3 | 0;
@@ -76,6 +81,8 @@ function resetGame() {
 }
 
 function processAnswer(elem) {
+    /* Process if elem is the answer of current state */
+
     if (hasclass(elem, "wrong") || answer.found)
         return;
     var ind = indexOf(cards, elem);
